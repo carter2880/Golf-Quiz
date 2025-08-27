@@ -78,6 +78,12 @@ else:
 if not play_game:
     print("Maybe next time. Goodbye!")
     exit()
-    
+
 player_name = input("What is your name? ")
 print(f"Hello {player_name}! There are {total_questions} questions. You need at least {correct_answers_needed} correct answers to pass.")
+
+# --- Quiz loop ---
+for i in range(total_questions):
+    question_number = i + 1
+    print(f"\nQuestion {question_number}: {questions[i][0]}")
+    
