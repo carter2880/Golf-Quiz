@@ -86,4 +86,7 @@ print(f"Hello {player_name}! There are {total_questions} questions. You need at 
 for i in range(total_questions):
     question_number = i + 1
     print(f"\nQuestion {question_number}: {questions[i][0]}")
-    
+
+     # Show options
+    for option in questions[i][1]:
+        print(option)
