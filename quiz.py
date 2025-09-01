@@ -90,3 +90,7 @@ for i in range(total_questions):
      # Show options
     for option in questions[i][1]:
         print(option)
+
+    # Get answer
+    answer = input("Your answer: ").strip().lower()
+
