@@ -94,3 +94,10 @@ for i in range(total_questions):
     # Get answer
     answer = input("Your answer: ").strip().lower()
 
+     # Check answer
+    if answer == questions[i][2]:
+        print("Correct!")
+        score += 1
+    else:
+        print( f" Wrong! The correct answer was: {questions[i][2]}")
+
