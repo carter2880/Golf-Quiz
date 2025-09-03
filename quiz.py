@@ -3,7 +3,7 @@
 # --- Variables ---
 score = 0
 total_questions = 20
-correct_answers_needed = 10
+correct_answers_needed = 13
 
 # --- Questions ---
 
@@ -96,8 +96,14 @@ for i in range(total_questions):
 
      # Check answer
     if answer == questions[i][2]:
-        print("Correct!")
+        print("✅Correct!")
         score += 1
     else:
-        print( f" Wrong! The correct answer was: {questions[i][2]}")
+        print( f"❌Wrong! The correct answer was: {questions[i][2]}")
+
+    # Bonus check every 5 questions
+    if question_number % 5 == 0 and question_number != total_questions:
+        print(f"--- 🎉 Bonus check: You've completed {question_number} questions, keep going! 🎉 --- ")
+
+
 
