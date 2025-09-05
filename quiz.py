@@ -108,3 +108,9 @@ for i in range(total_questions):
 # --- Results ---
 print("\n🎯 Quiz Complete!")
 print(f"{player_name}, your final score is {score}/{total_questions}.")
+
+# Pass/Fail
+if score >= correct_answers_needed:
+    print("🏆 You passed the quiz!")
+else:
+    print("💔 You didn't pass this time.")
