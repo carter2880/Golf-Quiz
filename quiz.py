@@ -105,5 +105,6 @@ for i in range(total_questions):
     if question_number % 5 == 0 and question_number != total_questions:
         print(f"--- 🎉 Bonus check: You've completed {question_number} questions, keep going! 🎉 --- ")
 
-
-
+# --- Results ---
+print("\n🎯 Quiz Complete!")
+print(f"{player_name}, your final score is {score}/{total_questions}.")
