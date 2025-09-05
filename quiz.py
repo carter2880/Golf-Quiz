@@ -114,3 +114,7 @@ if score >= correct_answers_needed:
     print("🏆 You passed the quiz!")
 else:
     print("💔 You didn't pass this time.")
+
+# Percentage
+percentage = (score / total_questions) * 100
+print(f"That's {percentage:.1f}% correct.")
