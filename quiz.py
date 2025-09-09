@@ -40,8 +40,8 @@ questions = [
      ["a) Pro Golf Association", "b) Professional Golfers Association", 
       "c) Players Golf Academy", "d) Public Golf Association"], "b"),
 
-    ("What is another name for the fairway?", 
-     ["a) Rough", "b) Short grass", "c) Green", "d) Hazard"], "b"),
+    ("What is the maximum time allowed to search for a lost ball under the Rules of Golf?", 
+     ["a) 1 minute", "b) 3 minutes", "c) 5 minutes", "d) 10 minutes"], "b"),
 
     ("What is the term for going 3 under par on a single hole?", 
      ["a) Eagle", "b) Birdie", "c) Albatross", "d) Double Eagle"], "c"),
@@ -52,17 +52,17 @@ questions = [
     ("What is the area around the hole called?", 
      ["a) Fringe", "b) Fairway", "c) Green", "d) Bunker"], "c"),
 
-    ("What's the name of the sand area hazard?", 
-     ["a) Bunker", "b) Rough", "c) Trap", "d) Hazard"], "a"),
+    ("Which golf course is known as the “Home of Golf?", 
+     ["a) St Andrews", "b) Pebble Beach", "c) Augusta National", "d) Royal Melbourne"], "a"),
 
     # True/False
     ("A golf ball must have 336 dimples. (True/False)", ["true", "false"], "false"),
 
-    ("A hole-in-one is also called an ace. (True/False)", ["true", "false"], "true"),
+    ("Tiger Woods has won more Masters tournaments than Jack Nicklaus. (True/False)", ["true", "false"], "false"),
 
     ("Golf is the only sport to have been played on the moon. (True/False)", ["true", "false"], "true"),
 
-    ("You can carry unlimited clubs in a professional round. (True/False)", ["true", "false"], "false"),
+    ("Every golf course has 18 holes. (True/False)", ["true", "false"], "false"),
 
     ("The Ryder Cup is played between Europe and the USA. (True/False)", ["true", "false"], "true"),
 ]
@@ -106,7 +106,7 @@ for i in range(total_questions):
         print(f"--- 🎉 Bonus check: You've completed {question_number} questions, keep going! 🎉 --- ")
 
 # --- Results ---
-print("\n🎯 Quiz Complete!")
+print("\n Quiz Complete!")
 print(f"{player_name}, your final score is {score}/{total_questions}.")
 
 # Pass/Fail
@@ -118,3 +118,5 @@ else:
 # Percentage
 percentage = (score / total_questions) * 100
 print(f"That's {percentage:.1f}% correct.")
+
+
