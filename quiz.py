@@ -101,7 +101,7 @@ for i in range(total_questions):
     else:
         print( f"❌Wrong! The correct answer was: {questions[i][2]}")
 
-    # Bonus check every 5 questions
+    # Bonus check every ∆5 questions
     if question_number % 5 == 0 and question_number != total_questions:
         print(f"--- 🎉 Bonus check: You've completed {question_number} questions, keep going! 🎉 --- ")
 
@@ -119,4 +119,11 @@ else:
 percentage = (score / total_questions) * 100
 print(f"That's {percentage:.1f}% correct.")
 
-
+# --- Play Again Option ---
+play_again = input("\nDo you want to play again? (yes/no): ").strip().lower()
+if play_again == "yes":
+    # Restart the program
+    import os, sys
+    os.execv(sys.executable, ['python'] + sys.argv) #I used Chatgpt for this line and line above to restart the program
+else:
+    print("Thanks for playing! Goodbye!")
