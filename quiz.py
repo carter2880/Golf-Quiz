@@ -10,61 +10,61 @@ correct_answers_needed = 13
 questions = [
   # --- Multi Choice Questions ---  
     ("What is the standard par for most golf courses?", 
-     ["a) 60", "b) 72", "c) 80", "d) 90"], "b"),
+     ["a) 60", "b) 72", "c) 80", "d) 90", "Enter a/b/c/d"], "b"),
 
     ("What is it called when you score 1 under par on a hole?", 
-     ["a) Eagle", "b) Birdie", "c) Bogey", "d) Albatross"], "b"),
+     ["a) Eagle", "b) Birdie", "c) Bogey", "d) Albatross", "Enter a/b/c/d"], "b"),
 
     ("What club is usually used to tee off on a par 5?", 
-     ["a) Putter", "b) Wedge", "c) Driver", "d) 9-iron"], "c"),
+     ["a) Putter", "b) Wedge", "c) Driver", "d) 9-iron", "Enter a/b/c/d"], "c"),
 
     ("Which major is played at Augusta National?", 
-     ["a) The Open", "b) PGA Championship", "c) US Open", "d) The Masters"], "d"),
+     ["a) The Open", "b) PGA Championship", "c) US Open", "d) The Masters", "Enter a/b/c/d"], "d"),
 
     ("What does a handicap represent in golf?", 
-     ["a) Age of golfer", "b) Skill level", "c) Course rating", "d) Club size"], "b"),
+     ["a) Age of golfer", "b) Skill level", "c) Course rating", "d) Club size", "Enter a/b/c/d"], "b"),
 
     ("How many holes are in a full round of golf?", 
-     ["a) 9", "b) 12", "c) 18", "d) 21"], "c"),
+     ["a) 9", "b) 12", "c) 18", "d) 21", "Enter a/b/c/d"], "c"),
 
     ("Which is the lowest score?", 
-     ["a) Birdie", "b) Par", "c) Bogey", "d) Eagle"], "d"),
+     ["a) Birdie", "b) Par", "c) Bogey", "d) Eagle", "Enter a/b/c/d"], "d"),
 
     ("Where was golf invented?", 
-     ["a) USA", "b) Scotland", "c) England", "d) Ireland"], "b"),
+     ["a) USA", "b) Scotland", "c) England", "d) Ireland", "Enter a/b/c/d"], "b"),
 
     ("What's the maximum number of clubs allowed in a golf bag?", 
-     ["a) 10", "b) 12", "c) 14", "d) 16"], "c"),
+     ["a) 10", "b) 12", "c) 14", "d) 16", "Enter a/b/c/d"], "c"),
 
     ("What does PGA stand for?", 
      ["a) Pro Golf Association", "b) Professional Golfers Association", 
-      "c) Players Golf Academy", "d) Public Golf Association"], "b"),
+      "c) Players Golf Academy", "d) Public Golf Association", "Enter a/b/c/d"], "b"),
 
     ("What is the maximum time allowed to search for a lost ball under the Rules of Golf?", 
-     ["a) 1 minute", "b) 3 minutes", "c) 5 minutes", "d) 10 minutes"], "b"),
+     ["a) 1 minute", "b) 3 minutes", "c) 5 minutes", "d) 10 minutes", "Enter a/b/c/d"], "b"),
 
     ("What is the term for going 3 under par on a single hole?", 
-     ["a) Eagle", "b) Birdie", "c) Albatross", "d) Double Eagle"], "c"),
+     ["a) Eagle", "b) Birdie", "c) Albatross", "d) Double Eagle", "Enter a/b/c/d"], "c"),
 
     ("Who has won the most men's major championships?", 
-     ["a) Tiger Woods", "b) Rory McIlroy", "c) Jack Nicklaus", "d) Phil Mickelson"], "c"),
+     ["a) Tiger Woods", "b) Rory McIlroy", "c) Jack Nicklaus", "d) Phil Mickelson", "Enter a/b/c/d"], "c"),
 
     ("What is the area around the hole called?", 
-     ["a) Fringe", "b) Fairway", "c) Green", "d) Bunker"], "c"),
+     ["a) Fringe", "b) Fairway", "c) Green", "d) Bunker", "Enter a/b/c/d"], "c"),
 
     ("Which golf course is known as the “Home of Golf?", 
-     ["a) St Andrews", "b) Pebble Beach", "c) Augusta National", "d) Royal Melbourne"], "a"),
+     ["a) St Andrews", "b) Pebble Beach", "c) Augusta National", "d) Royal Melbourne", "Enter a/b/c/d"], "a"),
 
     # True/False
-    ("A golf ball must have 336 dimples. (True/False)", ["true", "false"], "false"),
+    ("A golf ball must have 336 dimples. (true/false)", ["Enter true or false"], "false"),
 
-    ("Tiger Woods has won more Masters tournaments than Jack Nicklaus. (True/False)", ["true", "false"], "false"),
+    ("Tiger Woods has won more Masters tournaments than Jack Nicklaus. (true/false)", ["Enter true or false"], "false"),
 
-    ("Golf is the only sport to have been played on the moon. (True/False)", ["true", "false"], "true"),
+    ("Golf is the only sport to have been played on the moon. (true/false)", ["Enter true or false"], "true"),
 
-    ("Every golf course has 18 holes. (True/False)", ["true", "false"], "false"),
+    ("Every golf course has 18 holes. (true/false)", ["Enter true or false"], "false"),
 
-    ("The Ryder Cup is played between Europe and the USA. (True/False)", ["true", "false"], "true"),
+    ("The Ryder Cup is played between Europe and the USA. (true/false)", ["Enter true or false"], "true"),
 ]
 
 # --- Start Of Quiz ---
