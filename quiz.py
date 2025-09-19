@@ -70,9 +70,22 @@ normalquiz = [
     ("The Ryder Cup is played between Europe and the USA. (true/false)", ["Enter true or false"], "true"),
 ]
 
+hardquiz = [
+  # --- Harder Multi Choice Questions ---
+    ("Which golfer is known as 'The Golden Bear'?", 
+     ["a) Arnold Palmer", "b) Jack Nicklaus", "c) Gary Player", "d) Tom Watson", "Enter a/b/c/d"], "b"),
+
+    ("What is the name of the trophy awarded to the winner of The Open Championship?", 
+     ["a) Claret Jug", "b) Wanamaker Trophy", "c) Ryder Cup", "d) Masters Trophy", "Enter a/b/c/d"], "a"),
+
+    ("In what year was golf first included in the Olympic Games?", 
+     ["a) 1900", "b) 1904", "c) 2016", "d) 2020", "Enter a/b/c/d"], "c"),
+]
+
 # Shuffle questions for replayability
 import random
 random.shuffle(normalquiz)
+random.shuffle(hardquiz)
 
 # --- Start Of Quiz ---
 print("Welcome to the Golf Quiz!")
