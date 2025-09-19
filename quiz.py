@@ -10,7 +10,7 @@ RESET = "\033[0m"  #Used ChatGPT to find color codes
 
 # --- Questions ---
 
-questions = [
+normalquiz = [
   # --- Multi Choice Questions ---  
     ("What is the standard par for most golf courses?", 
      ["a) 60", "b) 72", "c) 80", "d) 90", "Enter a/b/c/d"], "b"),
@@ -70,6 +70,10 @@ questions = [
     ("The Ryder Cup is played between Europe and the USA. (true/false)", ["Enter true or false"], "true"),
 ]
 
+# Shuffle questions for replayability
+import random
+random.shuffle(normalquiz)
+
 # --- Start Of Quiz ---
 print("Welcome to the Golf Quiz!")
 response = input("Do you want to play the quiz? (yes/no): ").strip().lower()
@@ -83,26 +87,26 @@ if not play_game:
     exit()
 
 player_name = input("What is your name? ")
-print(f"Hello {player_name}! There are {total_questions} questions. You need at least {correct_answers_needed} correct answers to pass.")
+print(f"\nHello {player_name}! There are {total_questions} questions. You need at least {correct_answers_needed} correct answers to pass.")
 
 # --- Quiz loop ---
 for i in range(total_questions):
     question_number = i + 1
-    print(f"\nQuestion {question_number}: {questions[i][0]}")
+    print(f"\nQuestion {question_number}: {normalquiz[i][0]}")
 
      # Show options
-    for option in questions[i][1]:
+    for option in normalquiz[i][1]:
         print(option)
 
     # Get answer
     answer = input("Your answer: ").strip().lower()
 
      # Check answer
-    if answer == questions[i][2]:
+    if answer == normalquiz[i][2]:
         print(GREEN + "✅ Correct!" + RESET)
         score += 1
     else:
-        print(RED + f"❌ Wrong! The correct answer was: {questions[i][2]}" + RESET)
+        print(RED + f"❌ Wrong! The correct answer was: {normalquiz[i][2]}" + RESET)
 
     # Bonus check every ∆5 questions
     if question_number % 5 == 0 and question_number != total_questions:
