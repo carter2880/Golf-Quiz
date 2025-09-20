@@ -96,8 +96,8 @@ hardquiz = [
     ("Which golf course is famous for its 'Amen Corner'?", 
      ["a) Augusta National", "b) Pebble Beach", "c) Royal Birkdale", "d) Pinehurst No. 2", "Enter a/b/c/d"], "a"),
 
-    ("What is the name of the only major played outside the United States?", 
-     ["a) The Masters", "b) The Open Championship", "c) PGA Championship", "d) U.S. Open", "Enter a/b/c/d"], "b"),
+    ("Which golf course famously features the 'Postage Stamp' - one of the smallest greens in championship golf?", 
+     ["a) Royal Troon", "b) Carnoustie", "c) Royal Birkdale", "d) Turnberry", "Enter a/b/c/d"], "a"),
 
     ("What is the name of the only major played outside the United States?", 
      ["a) The Masters", "b) The Open Championship", "c) PGA Championship", "d) U.S. Open", "Enter a/b/c/d"], "b"),
@@ -137,7 +137,7 @@ random.shuffle(hardquiz)
 
 # --- Start Of Quiz ---
 print("Welcome to the Golf Quiz!")
-response = input("Do you want to play the quiz? (yes/no): ").strip().lower()
+response = input("Do you want to play a quiz? (yes/no): ").strip().lower()
 if response == "yes":
     play_game = True
 else:
@@ -148,7 +148,7 @@ if not play_game:
     exit()
 
 player_name = input("What is your name? ")
-print(f"\nHello {player_name}! There are {total_questions} questions. You need at least {correct_answers_needed} correct answers to pass.")
+print(f"\nHello {player_name}!")
 
 # --- Quiz loop ---
 while True:
@@ -160,7 +160,7 @@ while True:
 # Select quiz based on difficulty
 quiz = easyquiz if difficulty == 'easy' else hardquiz
 
-print(f"\nHello {player_name}! You've selected the {difficulty.capitalize()} quiz.")
+print(f"\nGreat choice {player_name}! You've selected the {difficulty.capitalize()} quiz.")
 print(f"There are {total_questions} questions. You need at least {correct_answers_needed} correct answers to pass.")
 
 # Update the quiz loop to use the selected quiz:
