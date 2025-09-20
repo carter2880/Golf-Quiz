@@ -59,15 +59,15 @@ normalquiz = [
      ["a) St Andrews", "b) Pebble Beach", "c) Augusta National", "d) Royal Melbourne", "Enter a/b/c/d"], "a"),
 
     # True/False
-    ("A golf ball must have 336 dimples. (true/false)", ["Enter true or false"], "false"),
+    ("A golf ball must have 336 dimples.", ["Enter true or false"], "false"),
 
-    ("Tiger Woods has won more Masters tournaments than Jack Nicklaus. (true/false)", ["Enter true or false"], "false"),
+    ("Tiger Woods has won more Masters tournaments than Jack Nicklaus.", ["Enter true or false"], "false"),
 
-    ("Golf is the only sport to have been played on the moon. (true/false)", ["Enter true or false"], "true"),
+    ("Golf is the only sport to have been played on the moon.", ["Enter true or false"], "true"),
 
-    ("Every golf course has 18 holes. (true/false)", ["Enter true or false"], "false"),
+    ("Every golf course has 18 holes.", ["Enter true or false"], "false"),
 
-    ("The Ryder Cup is played between Europe and the USA. (true/false)", ["Enter true or false"], "true"),
+    ("The Ryder Cup is played between Europe and the USA.", ["Enter true or false"], "true"),
 ]
 
 hardquiz = [
@@ -118,7 +118,15 @@ hardquiz = [
      ["a) Phil Mickelson", "b) Tiger Woods", "c) Brooks Koepka", "d) Rory McIlroy", "Enter a/b/c/d"], "b"),
 
     # True/False
-    
+    ("True or False: The longest recorded hole-in-one in professional golf is over 400 yards.", ["Enter true or false"], "false"),
+
+    ("True or False: In match play, the player with the lowest total strokes wins.", ["Enter true or false"], "false"),
+
+    ("True or False: The Presidents Cup is played every four years.", ["Enter true or false"], "false"),
+
+    ("True or False: The first televised golf tournament was broadcast in the 1950s.", ["Enter true or false"], "true"),
+
+    ("True or False: The 'cut' in a major championship is always set at even par.", ["Enter true or false"], "false"),
 ]
 
 
