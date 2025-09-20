@@ -3,14 +3,14 @@
 # --- Variables ---
 score = 0
 total_questions = 20
-correct_answers_needed = 13
+correct_answers_needed = 10
 GREEN = "\033[92m"
 RED = "\033[91m"
 RESET = "\033[0m"  #Used ChatGPT to find color codes
 
 # --- Questions ---
 
-normalquiz = [
+easyquiz = [
   # --- Multi Choice Questions ---  
     ("What is the standard par for most golf courses?", 
      ["a) 60", "b) 72", "c) 80", "d) 90", "Enter a/b/c/d"], "b"),
@@ -132,7 +132,7 @@ hardquiz = [
 
 # Shuffle questions for replayability
 import random
-random.shuffle(normalquiz)
+random.shuffle(easyquiz)
 random.shuffle(hardquiz)
 
 # --- Start Of Quiz ---
@@ -151,25 +151,27 @@ player_name = input("What is your name? ")
 print(f"\nHello {player_name}! There are {total_questions} questions. You need at least {correct_answers_needed} correct answers to pass.")
 
 # --- Quiz loop ---
-for i in range(total_questions):
-    question_number = i + 1
-    print(f"\nQuestion {question_number}: {normalquiz[i][0]}")
+while True:
+    difficulty = input("Would you like to play the Easy or Hard quiz? (easy/hard): ").strip().lower()
+    if difficulty in ['easy', 'hard']:
+        break
+    print("Please enter either 'easy' or 'hard'")
 
      # Show options
-    for option in normalquiz[i][1]:
+    for option in easyquiz[i][1]:
         print(option)
 
     # Get answer
     answer = input("Your answer: ").strip().lower()
 
      # Check answer
-    if answer == normalquiz[i][2]:
+    if answer == easyquiz[i][2]:
         print(GREEN + "✅ Correct!" + RESET)
         score += 1
     else:
-        print(RED + f"❌ Wrong! The correct answer was: {normalquiz[i][2]}" + RESET)
+        print(RED + f"❌ Wrong! The correct answer was: {easyquiz[i][2]}" + RESET)
 
-    # Bonus check every ∆5 questions
+    # Bonus check every 5 questions
     if question_number % 5 == 0 and question_number != total_questions:
         print(f"--- 🎉 Bonus check: You've completed {question_number} questions, keep going! 🎉 --- ")
 
