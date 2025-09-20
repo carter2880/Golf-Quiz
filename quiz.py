@@ -157,6 +157,12 @@ while True:
         break
     print("Please enter either 'easy' or 'hard'")
 
+# Select quiz based on difficulty
+quiz = easyquiz if difficulty == 'easy' else hardquiz
+
+print(f"\nHello {player_name}! You've selected the {difficulty.capitalize()} quiz.")
+print(f"There are {total_questions} questions. You need at least {correct_answers_needed} correct answers to pass.")
+
      # Show options
     for option in easyquiz[i][1]:
         print(option)
