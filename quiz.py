@@ -80,7 +80,47 @@ hardquiz = [
 
     ("In what year was golf first included in the Olympic Games?", 
      ["a) 1900", "b) 1904", "c) 2016", "d) 2020", "Enter a/b/c/d"], "c"),
+    
+    ("Who is the only player to win the Masters, U.S. Open, The Open, and PGA Championship in the same year?", 
+     ["a) Bobby Jones", "b) Ben Hogan", "c) Jack Nicklaus", "d) Tiger Woods", "Enter a/b/c/d"], "b"),
+
+    ("What is the name of the oldest golf tournament in the world?", 
+     ["a) The Masters", "b) The Open Championship", "c) U.S. Open", "d) PGA Championship", "Enter a/b/c/d"], "b"),
+   
+    ("Which country has produced the most winners of The Open Championship?", 
+     ["a) USA", "b) Scotland", "c) England", "d) Ireland", "Enter a/b/c/d"], "b"),
+
+    ("Which major championship did Phil Mickelson win at age 50, becoming the oldest major winner?", 
+     ["a) The Masters", "b) U.S. Open", "c) PGA Championship", "d) The Open Championship", "Enter a/b/c/d"], "c"),
+
+    ("Which golf course is famous for its 'Amen Corner'?", 
+     ["a) Augusta National", "b) Pebble Beach", "c) Royal Birkdale", "d) Pinehurst No. 2", "Enter a/b/c/d"], "a"),
+
+    ("What is the name of the only major played outside the United States?", 
+     ["a) The Masters", "b) The Open Championship", "c) PGA Championship", "d) U.S. Open", "Enter a/b/c/d"], "b"),
+
+    ("What is the name of the only major played outside the United States?", 
+     ["a) The Masters", "b) The Open Championship", "c) PGA Championship", "d) U.S. Open", "Enter a/b/c/d"], "b"),
+
+    ("Which country hosted the first golf tournament at the Olympic Games in the 21st century?", 
+     ["a) USA", "b) Brazil", "c) UK", "d) Japan", "Enter a/b/c/d"], "b"),
+
+    ("Which major championship did Jordan Spieth win at age 21?", 
+     ["a) The Open Championship", "b) U.S. Open", "c) PGA Championship", "d) The Masters", "Enter a/b/c/d"], "d"),
+
+    ("What is the name of the famous par-3 17th hole at TPC Sawgrass?", 
+     ["a) The Island Green", "b) The Devil's Elbow", "c) Hogan's Alley", "d) The Road Hole", "Enter a/b/c/d"], "a"),
+
+    ("Who was the first Japanese male golfer to win a major championship?", 
+     ["a) Hideki Matsuyama", "b) Shingo Katayama", "c) Ryo Ishikawa", "d) Isao Aoki", "Enter a/b/c/d"], "a"),
+
+    ("Which golfer won the U.S. Open with a broken leg and torn ACL in 2008?", 
+     ["a) Phil Mickelson", "b) Tiger Woods", "c) Brooks Koepka", "d) Rory McIlroy", "Enter a/b/c/d"], "b"),
+
+    # True/False
+    
 ]
+
 
 # Shuffle questions for replayability
 import random
