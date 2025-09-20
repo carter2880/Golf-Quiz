@@ -172,17 +172,28 @@ for i in range(total_questions):
     for option in quiz[i][1]:
         print(option)
 
-    # Get answer
-    answer = input("Your answer: ").strip().lower()
+    # Get valid answer
+    while True:
+        answer = input("Your answer: ").strip().lower()
 
-     # Check answer
+        # Check if it's a multiple choice question
+        if len(quiz[i][1]) > 1:  # More than 1 option means multiple choice
+            if answer in ['a', 'b', 'c', 'd']:
+                break
+            print("Please enter a valid option (a/b/c/d)")
+        else:  # True/False question
+            if answer in ['true', 'false']:
+                break
+            print("Please enter either 'true' or 'false'")
+
+    # Check answer
     if answer == quiz[i][2]:
         print(GREEN + "✅ Correct!" + RESET)
         score += 1
     else:
         print(RED + f"❌ Wrong! The correct answer was: {quiz[i][2]}" + RESET)
 
-    # Bonus check every 5 questions
+       # Bonus check every 5 questions
     if question_number % 5 == 0 and question_number != total_questions:
         print(f"--- 🎉 Bonus check: You've completed {question_number} questions, keep going! 🎉 --- ")
 
