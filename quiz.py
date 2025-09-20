@@ -163,19 +163,24 @@ quiz = easyquiz if difficulty == 'easy' else hardquiz
 print(f"\nHello {player_name}! You've selected the {difficulty.capitalize()} quiz.")
 print(f"There are {total_questions} questions. You need at least {correct_answers_needed} correct answers to pass.")
 
+# Update the quiz loop to use the selected quiz:
+for i in range(total_questions):
+    question_number = i + 1
+    print(f"\nQuestion {question_number}: {quiz[i][0]}")
+
      # Show options
-    for option in easyquiz[i][1]:
+    for option in quiz[i][1]:
         print(option)
 
     # Get answer
     answer = input("Your answer: ").strip().lower()
 
      # Check answer
-    if answer == easyquiz[i][2]:
+    if answer == quiz[i][2]:
         print(GREEN + "✅ Correct!" + RESET)
         score += 1
     else:
-        print(RED + f"❌ Wrong! The correct answer was: {easyquiz[i][2]}" + RESET)
+        print(RED + f"❌ Wrong! The correct answer was: {quiz[i][2]}" + RESET)
 
     # Bonus check every 5 questions
     if question_number % 5 == 0 and question_number != total_questions:
