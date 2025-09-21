@@ -1,4 +1,4 @@
-
+import time # For timing each question. Used ChatGPT to find time module
 # --- Variables ---
 score = 0
 total_questions = 20
@@ -58,7 +58,6 @@ easyquiz = [
      ["a) St Andrews", "b) Pebble Beach", "c) Augusta National", "d) Royal Melbourne", "Enter a/b/c/d"], "a"),
 
     # True/False
-    ("A golf ball must have 336 dimples.", ["Enter true or false"], "false"),
     ("A golf ball must have 336 dimples.", ["Enter T or F"], "f"),
 
     ("Tiger Woods has won more Masters tournaments than Jack Nicklaus.", ["Enter T or F"], "f"),
@@ -157,6 +156,14 @@ quiz = easyquiz if difficulty == 'easy' else hardquiz
 
 print(f"\nGreat choice {player_name}! You've selected the {difficulty.capitalize()} quiz.")
 print(f"There are {total_questions} questions. You need at least {correct_answers_needed} correct answers to pass.")
+
+# After player picks quiz difficulty and before first question starts
+time.sleep(2.75)  # Pause for 2.75 seconds
+print("\nThe quiz will start in...")
+for i in range(3, 0, -1):
+    print(i)
+    time.sleep(0.75)  # pause for 0.75 seconds
+print("Go!\n")
 
 # Update the quiz loop to use the selected quiz:
 for i in range(total_questions):
