@@ -1,4 +1,3 @@
-# --- Golf Quiz ---
 
 # --- Variables ---
 score = 0
@@ -60,14 +59,15 @@ easyquiz = [
 
     # True/False
     ("A golf ball must have 336 dimples.", ["Enter true or false"], "false"),
+    ("A golf ball must have 336 dimples.", ["Enter T or F"], "f"),
 
-    ("Tiger Woods has won more Masters tournaments than Jack Nicklaus.", ["Enter true or false"], "false"),
+    ("Tiger Woods has won more Masters tournaments than Jack Nicklaus.", ["Enter T or F"], "f"),
 
-    ("Golf is the only sport to have been played on the moon.", ["Enter true or false"], "true"),
+    ("Golf is the only sport to have been played on the moon.", ["Enter T or F"], "t"),
 
-    ("Every golf course has 18 holes.", ["Enter true or false"], "false"),
+    ("Every golf course has 18 holes.", ["Enter T or F"], "f"),
 
-    ("The Ryder Cup is played between Europe and the USA.", ["Enter true or false"], "true"),
+    ("The Ryder Cup is played between Europe and the USA.", ["Enter T or F"], "t"),
 ]
 
 hardquiz = [
@@ -118,15 +118,15 @@ hardquiz = [
      ["a) Phil Mickelson", "b) Tiger Woods", "c) Brooks Koepka", "d) Rory McIlroy", "Enter a/b/c/d"], "b"),
 
     # True/False
-    ("True or False: The longest recorded hole-in-one in professional golf is over 400 yards.", ["Enter true or false"], "false"),
+    ("True or False: The longest recorded hole-in-one in professional golf is over 400 yards.", ["Enter T or F"], "f"),
 
-    ("True or False: In match play, the player with the lowest total strokes wins.", ["Enter true or false"], "false"),
+    ("True or False: In match play, the player with the lowest total strokes wins.", ["Enter T or F"], "f"),
 
-    ("True or False: The Presidents Cup is played every four years.", ["Enter true or false"], "false"),
+    ("True or False: The Presidents Cup is played every four years.", ["Enter T or F"], "f"),
 
-    ("True or False: The first televised golf tournament was broadcast in the 1950s.", ["Enter true or false"], "true"),
+    ("True or False: The first televised golf tournament was broadcast in the 1950s.", ["Enter T or F"], "t"),
 
-    ("True or False: The 'cut' in a major championship is always set at even par.", ["Enter true or false"], "false"),
+    ("True or False: The 'cut' in a major championship is always set at even par.", ["Enter T or F"], "f"),
 ]
 
 
@@ -170,15 +170,17 @@ for i in range(total_questions):
     # Get valid answer
     while True:
         answer = input("Your answer: ").strip().lower()
+
         # Check if it's a multiple choice question
         if len(quiz[i][1]) > 1:  # More than 1 option means multiple choice
             if answer in ['a', 'b', 'c', 'd']:
                 break
             print("Please enter a valid option (a/b/c/d)")
         else:  # True/False question
-            if answer in ['true', 'false']:
+            if answer in ['t', 'f']:
                 break
-            print("Please enter either 'true' or 'false'")
+            print("Please enter either 't' or 'f'")
+            
 
     # Check answer
     if answer == quiz[i][2]:
@@ -213,3 +215,4 @@ if play_again == "yes":
     os.execv(sys.executable, ['python'] + sys.argv) #I used Chatgpt for this line and line above to restart the program
 else:
     print("Thanks for playing! Goodbye!")
+
