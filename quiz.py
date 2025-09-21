@@ -138,12 +138,7 @@ random.shuffle(hardquiz)
 # --- Start Of Quiz ---
 print("Welcome to the Golf Quiz!")
 response = input("Do you want to play a quiz? (yes/no): ").strip().lower()
-if response == "yes":
-    play_game = True
-else:
-    play_game = False
-
-if not play_game:
+if response != "yes":
     print("Maybe next time. Goodbye!")
     exit()
 
@@ -175,7 +170,6 @@ for i in range(total_questions):
     # Get valid answer
     while True:
         answer = input("Your answer: ").strip().lower()
-
         # Check if it's a multiple choice question
         if len(quiz[i][1]) > 1:  # More than 1 option means multiple choice
             if answer in ['a', 'b', 'c', 'd']:
